@@ -1,11 +1,15 @@
 # pip install django
+
 python -m pip install -U channels
+
 python3 -m pip install channels_redis
 
 #### install docker
 
 sudo apt update
+
 sudo apt upgrade
+
 sudo apt install docker.io
 
 
@@ -15,6 +19,7 @@ Start Docker and enter the following command to enable it after every time the s
 sudo systemctl enable --now docker
 
 To disable it again, simply type in the following command.
+
 $ sudo systemctl disable --now docker
 
 ### Set user Privilages
@@ -24,4 +29,5 @@ sudo usermod -aG docker YourUsername
 sudo chmod 666 /var/run/docker.sock
 
 docker run -p 6379:6379 -d redis:5
+
 sudo netstat -pna | grep 6379
